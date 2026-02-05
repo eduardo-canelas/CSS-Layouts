@@ -8,6 +8,8 @@ html {
 body {
     display: flex;
     flex-direction: row;
+    margin: 0px;
+    padding: 0px;
 }
 
 main {
@@ -15,25 +17,29 @@ main {
 }
 
 #jumpMenu {
-    display: flex;
-    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
     text-align: center;
     background-color: #dba421;
-    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
     width: 12%;
-    padding: 20px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #jumpMenu a {
     text-align: center;
     margin: 0px;
-    padding: 10px;
+    font-size: 20px;
 }
 
 #jumpMenu h2 {
     margin: 0px;
-    padding: 5px;
+    padding: 10px;
+    font-size: 30px;
 }
 
 header p {
@@ -43,6 +49,7 @@ header p {
     margin: 0px;
     padding: 20px;
     font-family: Arial;
+    font-size: 30px;
 }
 
 header nav {
@@ -50,54 +57,73 @@ header nav {
     flex-direction: row;
     background-color: #000000;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav button {
     padding: 10px;
     color: white;
     background-color: #1b00ff;
-    width: 150px;
+    width: 200px;
+    font-size: 20px;
 }
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 #thanks {
     position: fixed;
     top: 98%;
-    left: 99%;
+    left: 100%;
     transform: translate(-96%, -96%);
     width: 250px;
     background-color: #87cefa;
     border: #000000;
     border-style: solid;
     border-width: 1px;
-    padding: 20px;
+    padding: 30px;
+    font-size: 25px;
+    height: 52px;
 }
 
 footer {
     display: flex;
     flex-direction: row;
+    background-color: #DBA421;
+    height: 100px;
+    width: 915px;
+    align-items: center;
 }
 
-footer p,
+footer p {
+    margin: 0px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 footer span {
     margin: 0px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 #container article {
     width: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: Helvetica;
+    text-align: justify;
 }
