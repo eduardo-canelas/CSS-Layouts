@@ -1,1 +1,107 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    flex: 1;
+}
+
+#jumpMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #dba421;
+    padding-top: 0px;
+    width: 12%;
+    box-sizing: border-box;
+}
+
+#jumpMenu a {
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+#jumpMenu h2 {
+    margin: 0px;
+    padding: 5px;
+}
+
+header p {
+    text-align: center;
+    color: #080000;
+    background-color: #fe0200;
+    margin: 0px;
+    padding: 20px;
+    font-family: Arial;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav button {
+    padding: 10px;
+    color: white;
+    background-color: #1b00ff;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#thanks {
+    position: fixed;
+    top: 98%;
+    left: 99%;
+    transform: translate(-96%, -96%);
+    width: 250px;
+    background-color: #87cefa;
+    border: #000000;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer p,
+footer span {
+    margin: 0px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#container article {
+    width: 300px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: Arial;
+}
+
+#container article:hover {
+    transform: scale(1.1);
+}
